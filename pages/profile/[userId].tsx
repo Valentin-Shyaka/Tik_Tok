@@ -43,14 +43,14 @@ const Profile = ({ data }: IProps) => {
     <div className='w-full'>
       <div className='flex gap-6 md:gap-10 mb-4 bg-white w-full'>
         <div className='w-16 h-16 md:w-32 md:h-32'>
-          {/* <Image
+          <Image
             width={120}
             height={120}
             layout='responsive'
             className='rounded-full'
             src={user.image}
             alt='user-profile'
-          /> */}
+          />
         </div>
 
         <div>
