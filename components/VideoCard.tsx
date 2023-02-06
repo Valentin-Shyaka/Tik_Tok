@@ -38,6 +38,9 @@ const VideoCard: NextPage<IProps> = ({ post: { caption, postedBy, video, _id, li
       setPlaying(true);
     }
   };
+
+  const [isLiked,setIsLiked]=useState(false)
+  const [like,setLikes]=useState(0)
   
 
   useEffect(() => {
@@ -160,7 +163,7 @@ const VideoCard: NextPage<IProps> = ({ post: { caption, postedBy, video, _id, li
       
       
       
-          <VideoIcon Icon={AiOutlineHeart}/>
+          <VideoIcon Icon={AiOutlineHeart}/ >
           <VideoIcon Icon={BiCommentAdd}/>
           <VideoIcon Icon={BsBell}/>
           <VideoIcon Icon={BsUpload}/>
